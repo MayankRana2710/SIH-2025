@@ -1,0 +1,75 @@
+/* General */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f4f6f9;
+  color: #333;
+}
+
+/* Header */
+.header {
+  background: #205072;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
+}
+.header .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+.header .subtext {
+  display: block;
+  font-size: 12px;
+  color: #d0e6f7;
+}
+.nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.user-panel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Layout */
+.layout {
+  display: flex;
+}
+.sidebar {
+  width: 220px;
+  background: #fff;
+  padding: 15px;
+  border-right: 1px solid #ddd;
+}
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Cards */
+.card {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Map */
+#map {
+  height: 400px;
+  border-radius: 6px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 10px;
+  background: #205072;
+  color: #fff;
+  margin-top: 10px;
+}

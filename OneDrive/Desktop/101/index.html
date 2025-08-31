@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FRA Atlas & Decision Support System</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      🏛️ FRA Atlas & DSS
+      <span class="subtext">Ministry of Tribal Affairs, Govt. of India</span>
+    </div>
+    <nav class="nav">
+      <a href="#">Dashboard</a>
+      <a href="#">Atlas Map</a>
+      <a href="#">Schemes</a>
+      <a href="#">Reports</a>
+    </nav>
+    <div class="user-panel">
+      <select>
+        <option>English</option>
+        <option>हिंदी</option>
+      </select>
+      <span class="notify">🔔</span>
+      <span class="user">👤 Rajesh Kumar</span>
+    </div>
+  </header>
+
+  <!-- Layout -->
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h3>Filters</h3>
+      <label>State</label>
+      <select>
+        <option>Madhya Pradesh</option>
+        <option>Tripura</option>
+        <option>Odisha</option>
+        <option>Telangana</option>
+      </select>
+      <label>FRA Type</label>
+      <select>
+        <option>IFR</option>
+        <option>CR</option>
+        <option>CFR</option>
+      </select>
+    </aside>
+
+    <!-- Content -->
+    <main class="content">
+      <section class="card">
+        <h2>FRA Implementation Overview</h2>
+        <canvas id="fraChart"></canvas>
+      </section>
+
+      <section class="card">
+        <h2>Geospatial Atlas</h2>
+        <div id="map"></div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    © 2025 Ministry of Tribal Affairs | FRA Atlas & DSS
+  </footer>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
